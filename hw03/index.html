@@ -25,14 +25,15 @@
     font-style: normal;
   }
 
-  @font-face {
-    font-family:'CircleFont';
-    src: url(https://circle472.github.io/ct2022s/hw04/CircleFont_v2.woff2); 
+@font-face {
+    font-family: 'MyMoeFont';
+    /* 這裡假設你的 ttf 檔跟這個 html 檔放在同一個資料夾。 
+       如果在不同資料夾，請更改為正確的相對路徑或網址 */
+    src: url('./MOE111590455.ttf') format('truetype'); 
   }
 
-  @font-face {
-    font-family:'noto114598033';
-    src: url(https://lctung.github.io/ai2026s/hw03/noto114598033.woff2); 
+  .moe-display-text {
+    font-family: 'MyMoeFont', 'LXGW WenKai Mono TC', sans-serif;
   }
 
   table {
