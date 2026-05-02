@@ -31,9 +31,13 @@
     /* 2. 把 format 改成 'woff2' */
     src: url('./MOE111590455.woff2') format('woff2'); 
   }
+@font-face {
+    font-family: 'MyBig5Font';
+    src: url('./Big111590455.woff2') format('woff2'); 
+  }
 
   .moe-display-text {
-    font-family: 'MyMoeFont', 'LXGW WenKai Mono TC', sans-serif;
+    font-family: 'MyMoeFont', 'MyBig5Font', 'LXGW WenKai Mono TC', sans-serif;
   }
 
   table {
@@ -101,7 +105,7 @@
 
 /* 把你的字體放在最前面 */
   p {
-    font-family: 'MyMoeFont', 'noto114598033', 'LXGW WenKai Mono TC';
+    font-family: 'MyMoeFont', 'MyBig5Font', 'noto114598033', 'LXGW WenKai Mono TC';
   }
 
   .container-fluid {
