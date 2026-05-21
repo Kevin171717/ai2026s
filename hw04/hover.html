@@ -52,7 +52,7 @@
             .style("opacity", 0);
 
         // 設定為自己字的檔名
-        var myImg = "111590455.png";
+        var myImg = "111590455";
         
         d3.csv("results.csv").then(function(data) {
 
@@ -120,7 +120,7 @@
             // 加入圖片
             node.append("image")
                 .attr("xlink:href", function(d) { 
-                    return "img/" + d.Student; 
+                    return "img/" + d.Student + ".png"; // 這裡加上 .png
                 }) 
                 .attr("x", -17)
                 .attr("y", -17) 
@@ -136,7 +136,7 @@
                     
                     tooltip.html(
                         "<div style='margin-bottom:5px; font-weight:bold; font-size: 1.1em;'>" + d.Student + "</div>" +
-                        "<img src='img/" + d.Student + "' alt='Handwriting' style='width: 100%; height: auto; border: 1px solid #ccc;'>"
+                        "<img src='img/" + d.Student + ".png' alt='Handwriting' style='width: 100%; height: auto; border: 1px solid #ccc;'>"
                     )
                     var tooltipNode = document.getElementById("tooltip");
                     var tooltipWidth = tooltipNode.offsetWidth;
